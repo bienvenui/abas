@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Web de Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(white, #e0f7fa);
+            color: #333;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img.logo {
+            width: 80px;
+            vertical-align: middle;
+        }
+        h1 {
+            display: inline;
+            margin-left: 10px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card p {
+            margin: 10px;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo del sitio" class="logo" />
+        <h1>Ideas Creativas de Coches y Casas</h1>
+    </header>
+
+    <section>
+        <h2>Coches Imaginados</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="car1.jpg" alt="Coche imaginado 1" />
+                <p>Coche volador urbano</p>
+            </div>
+            <div class="card">
+                <img src="car2.jpg" alt="Coche imaginado 2" />
+                <p>Futurista con energía solar</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Casas Modernas</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="house1.jpg" alt="Casa moderna 1" />
+                <p>Casa flotante ecológica</p>
+            </div>
+            <div class="card">
+                <img src="house2.jpg" alt="Casa moderna 2" />
+                <p>Diseño minimalista con jardín</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contáctame</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required />
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        Hecho por un joven creador con mucha imaginación 🚀
+    </footer>
+</body>
+</html>
