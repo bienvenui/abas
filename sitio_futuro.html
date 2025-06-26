@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideas de Futuro - [Tu Nombre]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    section {
+      padding: 20px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/50" class="logo" alt="Logo" />
+    <h1>Ideas de Futuro - [Tu Nombre]</h1>
+    <p>Explora mis ideas de coches y casas modernas. ¡Imaginación al poder!</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('coches')">Coches Imaginados</button>
+    <button onclick="mostrarSeccion('casas')">Casas Modernas</button>
+  </nav>
+
+  <section id="coches" class="active">
+    <h2>Coches Imaginados</h2>
+    <p>Aquí irán tus maquetas, bocetos o ideas de coches futuristas.</p>
+    <img src="https://via.placeholder.com/300x200" alt="Coche futuro" />
+  </section>
+
+  <section id="casas">
+    <h2>Casas Modernas</h2>
+    <p>Diseños únicos de viviendas modernas, funcionales y sostenibles.</p>
+    <img src="https://via.placeholder.com/300x200" alt="Casa moderna" />
+  </section>
+
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
